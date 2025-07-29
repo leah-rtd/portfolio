@@ -7,7 +7,7 @@ info = {
    "Tableau":"https://public.tableau.com/app/profile/vickytc/viz/SunnybrookTeam/Overview",
    "Medium":"https://medium.com/@vicky-note/about",
    "City":"Berlin, Germany",
-   "Photo":"""<a href=\"https://www.linkedin.com/in/leah-rothschild/\"><img src=\"https://ca.slack-edge.com/T02NE0241-U0463E9A2BH-48400d27db11-512" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
+   "Photo":"""<a href=\"https://www.linkedin.com/in/leah-rothschild/\"><img src=\"https://github.com/leah-rtd/portfolio/blob/updating_content/images/profile_pic.jpg?raw=true" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
    "Email": "leahisrothschild@gmail.com"
 }
 ## TODO tableau and medium, can I change for linkedin ?
