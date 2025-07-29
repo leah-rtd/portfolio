@@ -19,7 +19,7 @@ openai_api_key = st.sidebar.text_input('Enter your OpenAI API Key and hit Enter'
 openai.api_key = (openai_api_key)
 
 # load the file
-documents = SimpleDirectoryReader(input_files=["bio.txt"]).load_data()
+documents = SimpleDirectoryReader(input_files=["extra_material/bio.txt"]).load_data()
 
 pronoun = info["Pronoun"]
 name = info["Name"]
@@ -135,7 +135,7 @@ with st.container():
     st.subheader('📌 Career Snapshot')
 
     # load data
-    with open('timeline.json', "r") as f:
+    with open('extra_material/timeline.json', "r") as f:
         data = f.read()
     # for number of students as of 29/07/2025
     # render timeline
@@ -306,7 +306,7 @@ with st.container():
     with col2:
         st.subheader("📨 Contact Me")
         contact_form = f"""
-        <form action="https://formsubmit.co/{info["Email"]}" method="POST">
+        <form action="https://formsubmit.co/430d11100db23f61bdfebe1e4ea6e020" method="POST">
             <input type="hidden" name="_captcha value="false">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
