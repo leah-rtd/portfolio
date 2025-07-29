@@ -1,24 +1,24 @@
 info = {
-   "Pronoun": "her", 
-   "Name": "Vicky",
-   "Full_Name": "Vicky Kuo",
-   "Intro": "A Tech Educator and AI Enthusiast at cognitiveclass.ai",
-   "About":"Hey there, I'm Vicky! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. Check out my free courses and projects on cognitiveclass.ai: https://cognitiveclass.ai/",
+   "Pronoun": "her",
+   "Name": "Leah",
+   "Full_Name": "Leah Rothschild",
+   "Intro": "A Data Science teacher @le wagon with an interest in sustainability, human rights issues and international governance",
+   "About":"Hey there, I'm Leah! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in European Governance.",
    "Tableau":"https://public.tableau.com/app/profile/vickytc/viz/SunnybrookTeam/Overview",
    "Medium":"https://medium.com/@vicky-note/about",
-   "City":"Toronto, Canada",
-   "Photo":"""<a href=\"https://www.linkedin.com/in/vicky-tck/\"><img src=\"https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/profile.png" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
-   "Email": "vicky.kuo.contact@gmail.com"
+   "City":"Berlin, Germany",
+   "Photo":"""<a href=\"https://www.linkedin.com/in/leah-rothschild/\"><img src=\"https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/profile.png" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
+   "Email": "leahisrothschild@gmail.com"
 }
-
+## TODO tableau and medium, can I change for linkedin ?
 embed_rss= {
-    'rss':"""<div style="overflow-y: scroll; height:500px; background-color:white;"> <div id="retainable-rss-embed" 
+    'rss':"""<div style="overflow-y: scroll; height:500px; background-color:white;"> <div id="retainable-rss-embed"
         data-rss="https://medium.com/feed/@vicky-note"
-        data-maxcols="3" 
+        data-maxcols="3"
         data-layout="grid"
-        data-poststyle="inline" 
-        data-readmore="Read the rest" 
-        data-buttonclass="btn btn-primary" 
+        data-poststyle="inline"
+        data-readmore="Read the rest"
+        data-buttonclass="btn btn-primary"
         data-offset="0"></div></div> <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>"""
 }
 

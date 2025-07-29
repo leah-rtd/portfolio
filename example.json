@@ -7,53 +7,100 @@
           "credit": ""
         },
         "text": {
-          "headline": "Welcome to<br>Streamlit Timeline",
-          "text": "<p>A Streamlit Timeline component by integrating TimelineJS from Knightlab</p>"
+          "headline": "Welcome to<br>My Timeline",
+          "text": "<p>A brief overview of my educational and work background</p>"
         }
     },
     "events": [
       {
         "media": {
-          "url": "https://vimeo.com/143407878",
-          "caption": "How to Use TimelineJS (<a target=\"_blank\" href='https://timeline.knightlab.com/'>credits</a>)"
+          "url": "https://www.universiteitleiden.nl/binaries/content/gallery/ul2/main-images/campus-the-hague/luc-the-hague/class-of-2020-photo.png/class-of-2020-photo.png/d1180x428",
+          "caption": "<a href='https://www.universiteitleiden.nl/en/news/2020/07/luc-online-graduation-2020' target='_blank'>Leiden University College, The Hague Class of 2020</a>",
+          "credit": "Leiden University"
         },
         "start_date": {
-          "year": "2016",
-          "month":"1"
+          "year": "2017",
+          "month":"8"
         },
-        "text": {
-          "headline": "TimelineJS<br>Easy-to-make, beautiful timelines.",
-          "text": "<p>TimelineJS is a populair tool from Knightlab. It has been used by more than 250,000 people to tell stories seen hundreds of millions of times, and is available in more than sixty languages. </p>"
-        }
-      },
-      {
-        "media": {
-          "url": "https://www.youtube.com/watch?v=CmSKVW1v0xM",
-          "caption": "Streamlit Components (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
-        },
-        "start_date": {
+        "end_date":{
           "year": "2020",
-          "month":"7",
-          "day":"13"
+          "month": "7"
         },
         "text": {
-          "headline": "Streamlit Components<br>version 0.63.0",
-          "text": "Streamlit lets you turn data scripts into sharable web apps in minutes, not weeks. It's all Python, open-source, and free! And once you've created an app you can use our free sharing platform to deploy, manage, and share your app with the world."
+          "headline": "Bachelor of Science 🎓<br>",
+          "text": "<p><strong>Government, Economics and Development</strong></p><p>Graduated Cum Laude from Leiden University College (LUC), the Hague.</p><p>During my time at LUC I also participated in a 6 month study abroad program in Buenos Aires, Argentina</p><p>My favourite classes included South American History and Politics, Environmental Governance and Mathematical Modeling"
         }
       },
       {
         "media": {
-          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
-          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
+          "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fodors.com%2Fwp-content%2Fuploads%2F2018%2F10%2FHERO_UltimateRome_Hero_shutterstock789412159.jpg&f=1&nofb=1&ipt=d4d845ccead82087c3bca43d07780a1889e41274be9b90cbf0ca8aea7cff6381",
+          "caption": "Master Degree in Rome, Italy"
         },
         "start_date": {
           "year": "2021",
-          "month":"2"
+          "month":"1"
+        },
+        "end_date": {
+          "year": "2022",
+          "month": 8
         },
         "text": {
-          "headline": "Streamlit TimelineJS component",
-          "text": "Started with a demo on https://www.innerdoc.com/nlp-timeline/ . <br>Then made a <a href='https://github.com/innerdoc/streamlit-timeline'>Streamlit component</a> of it. <br>Then made a <a href='https://pypi.org/project/streamlit-timeline/'>PyPi package</a> for it."
+          "headline": "Master of Arts 🎓<br>",
+          "text": "<p><strong>Government and Politics, major in Sustainability and Resilience</strong></p><p>For my Master's Degree, I moved to the beautiful city of Rome, Italy where I ended up spending three years. During my master's degree I developed a particular interest in <strong>International Law and Diplomacy</strong></p>"
         }
+      },
+      {
+        "media": {
+          "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A1200%2F1*uPtHsf9pA3XOpttPsXilFg.png&f=1&nofb=1&ipt=554337c1f48d0f0e721aa001b0f5d618d20f59b9a351b684bde61ef91120d41b",
+          "caption": "Le Wagon Data Science Bootcamp",
+          "credit": "Le Wagon"
+        },
+        "start_date": {
+          "year": "2022",
+          "month":"10"
+        },
+        "end_date": {
+          "year": "2023",
+          "month":"1"
+        },
+        "text": {
+          "headline": "Data Science & AI 9 weeks intensive Bootcamp 🎓<br>",
+          "text": "<p>Delved into my interest for Data Science, gaining fluency in <strong>Python, SQL, Scikit-learn, TensorFlow Keras</strong> among many others. Implemented my first ideas into the project <a href='https://github.com/b-fa-ce/future_proofing_cities' target='_blank'>Future Proofing Cities</a>.</p>"
+        }
+      },
+      {
+        "media":{
+          "url":"",
+          "caption":"",
+          "credit":""
+        },
+        "start_date":{
+          "month":"7",
+          "year":"2023"
+        },
+        "text":{
+          "headline":"",
+          "text":""
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": ""
+        },
+        "start_date": {
+          "year": "2023",
+          "month": "2"
+        },
+        "end_date":{
+          "year": "2030"
+        },
+        "text": {
+          "headline": "Data Science Teacher<br>Batch Manager<br>",
+          "text": "<p>Since February 2023, I have been working as a Data Science and Data Analytics teacher. Having now helped nearly 700 students in their discovery of the world of Data Science.</p><p>I have found this role especially fulfilling and have greatly appreciated the opportunity to develop my comminucation skills as well as further develop my own Data Science knowledge.</p><p>One aspect I particularly enjoy of this position is Project Weeks. Indeed, at the end of the course, the students work on their projects to put into practice the skills they have seen throughout the bootcamp. Following them during this phase has been incredibly educational for me. I have discovered new sectors of applications of ML and DL techniques as well as enjoyed seeing my students thrive."
+        },
+        "display_date": "February 2023 - Present"
+
       }
     ]
 }
