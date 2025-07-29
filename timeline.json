@@ -70,17 +70,16 @@
       },
       {
         "media":{
-          "url":"",
-          "caption":"",
-          "credit":""
+          "url":"https://github.com/leah-rtd/portfolio/blob/updating_content/images/SICSS.jpg?raw=true",
+          "caption":"Summer Institue in Computational Social Sciences"
         },
         "start_date":{
           "month":"7",
           "year":"2023"
         },
         "text":{
-          "headline":"",
-          "text":""
+          "headline":"Summer Institute in Computational Social Sciences<br>",
+          "text":"<p>In the summer of 2023, I participated in a 2 week summer institute with peers all interested in applying Data Science tools to Social Sciences. During these two weeks we focused on topics such as digital trace data, spatial analysis, ethics and AI."
         }
       },
       {

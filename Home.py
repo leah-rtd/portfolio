@@ -64,6 +64,7 @@ if user_input:
     st.info(ask_bot(user_input))
 
 # -----------------  loading assets  ----------------- #
+st.sidebar.markdown('<hr>Click on the image to view my <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20px" style="vertical-align:middle;">', unsafe_allow_html = True)
 st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
 @st.cache_resource
@@ -134,7 +135,7 @@ with st.container():
     st.subheader('📌 Career Snapshot')
 
     # load data
-    with open('example.json', "r") as f:
+    with open('timeline.json', "r") as f:
         data = f.read()
     # for number of students as of 29/07/2025
     # render timeline
