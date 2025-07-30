@@ -142,171 +142,114 @@ with st.container():
     # render timeline
     timeline(data, height=600)
 
-# -----------------  tableau  -----------------  #
-with st.container():
-    st.markdown("""""")
-    st.subheader("📊 Tableau")
-    col1,col2 = st.columns([0.95, 0.05])
-    with col1:
-        with st.expander('See the work'):
-            components.html(
-                """
-                <!DOCTYPE html>
-                <html>
-                    <title>Basic HTML</title>
-                    <body style="width:130%">
-                        <div class='tableauPlaceholder' id='viz1684205791200' style='position: static'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SunnybrookTeam&#47;Overview&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SunnybrookTeam&#47;Overview' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SunnybrookTeam&#47;Overview&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1684205791200');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1350px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1550px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1350px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1550px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='5750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                    </body>
-                </HTML>
-                """
-            , height=400, scrolling=True
-            )
-    st.markdown(""" <a href={}> <em>🔗 access to the link </a>""".format(info['Tableau']), unsafe_allow_html=True)
+# -----------------  notebooks  -----------------  #
 
-# ----------------- medium ----------------- #
-with st.container():
-    st.markdown("""""")
-    st.subheader('✍️ Medium')
-    col1,col2 = st.columns([0.95, 0.05])
-    with col1:
-        with st.expander('Display my latest posts'):
-            components.html(embed_rss['rss'],height=400)
+# Teaching Materials Page URL
+teaching_material_page_link = "/Teaching_Materials"
 
-        st.markdown(""" <a href={}> <em>🔗 access to the link </a>""".format(info['Medium']), unsafe_allow_html=True)
+# Helper to generate slideshow HTML for a given notebook list and unique ID
+def create_slideshow(notebooks, unique_id):
+    slides_html = ""
+    dots_html = ""
 
-# -----------------  endorsement  ----------------- #
-with st.container():
-    # Divide the container into three columns
-    col1,col2,col3 = st.columns([0.475, 0.475, 0.05])
-    # In the first column (col1)
-    with col1:
-        # Add a subheader to introduce the coworker endorsement slideshow
-        st.subheader("👄 Coworker Endorsements")
-        # Embed an HTML component to display the slideshow
-        components.html(
-        f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Styles for the slideshow -->
-        <style>
-            * {{box-sizing: border-box;}}
-            .mySlides {{display: none;}}
-            img {{vertical-align: middle;}}
+    for idx, notebook in enumerate(notebooks):
+        slides_html += f"""
+        <div class="mySlides-{unique_id} fade">
+            <div style="text-align:left; margin-bottom: 10px;">
+                <h4 style="color: #FFFFFF;">{notebook['title']}</h4>
+            </div>
+            <img src="{notebook['thumbnail']}" style="width:100%; border-radius: 10px;">
+        </div>
+        """
+        dots_html += f'<span class="dot-{unique_id}"></span>\n'
 
-            /* Slideshow container */
-            .slideshow-container {{
-            position: relative;
-            margin: auto;
-            width: 100%;
-            }}
+    html_code = f"""
+    <div class="slideshow-container">
+        {slides_html}
+    </div>
 
-            /* The dots/bullets/indicators */
-            .dot {{
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #eaeaea;
+    <br>
+    <div style="text-align:center">
+        {dots_html}
+    </div>
+
+    <style>
+        * {{box-sizing: border-box;}}
+        .mySlides-{unique_id} h4 {{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            margin: 0;
+        }}
+        img {{vertical-align: middle;}}
+        .dot-{unique_id} {{
+            height: 14px;
+            width: 14px;
+            margin: 0 4px;
+            background-color: #bbb;
             border-radius: 50%;
             display: inline-block;
             transition: background-color 0.6s ease;
-            }}
-
-            .active {{
-            background-color: #6F6F6F;
-            }}
-
-            /* Fading animation */
-            .fade {{
+            cursor: pointer;
+        }}
+        .active-{unique_id} {{background-color: #333;}}
+        .fade {{
             animation-name: fade;
             animation-duration: 1s;
-            }}
-
-            @keyframes fade {{
+        }}
+        @keyframes fade {{
             from {{opacity: .4}}
             to {{opacity: 1}}
-            }}
+        }}
+    </style>
 
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {{
-            .text {{font-size: 11px}}
-            }}
-            </style>
-        </head>
-        <body>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                <img src={endorsements["img1"]} style="width:100%">
-                </div>
+    <script>
+    let slideIndex_{unique_id} = 0;
+    showSlides_{unique_id}();
 
-                <div class="mySlides fade">
-                <img src={endorsements["img2"]} style="width:100%">
-                </div>
+    function showSlides_{unique_id}() {{
+        let i;
+        let slides = document.getElementsByClassName("mySlides-{unique_id}");
+        let dots = document.getElementsByClassName("dot-{unique_id}");
+        for (i = 0; i < slides.length; i++) {{
+            slides[i].style.display = "none";
+        }}
+        slideIndex_{unique_id}++;
+        if (slideIndex_{unique_id} > slides.length) {{slideIndex_{unique_id} = 1}}
+        for (i = 0; i < dots.length; i++) {{
+            dots[i].className = dots[i].className.replace(" active-{unique_id}", "");
+        }}
+        slides[slideIndex_{unique_id}-1].style.display = "block";
+        dots[slideIndex_{unique_id}-1].className += " active-{unique_id}";
+        setTimeout(showSlides_{unique_id}, 5000);
+    }}
+    </script>
+    """
 
-                <div class="mySlides fade">
-                <img src={endorsements["img3"]} style="width:100%">
-                </div>
+    return html_code
 
-            </div>
-            <br>
-            <!-- Navigation dots -->
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
 
-            <script>
-            let slideIndex = 0;
-            showSlides();
+# Layout: Two Columns
+with st.container():
+    st.markdown("""""")
+    st.subheader('👩‍🏫 Teaching Materials')
+    col1, col2 = st.columns(2)
 
-            function showSlides() {{
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {{
-                slides[i].style.display = "none";
-            }}
-            slideIndex++;
-            if (slideIndex > slides.length) {{slideIndex = 1}}
-            for (i = 0; i < dots.length; i++) {{
-                dots[i].className = dots[i].className.replace("active", "");
-            }}
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }}
+    with col1:
+        st.markdown("English Notebooks")
+        components.html(create_slideshow(notebooks_gb, "GB"), height=400)
 
-            var interval = setInterval(showSlides, 2500); // Change image every 2.5 seconds
+    with col2:
+        st.markdown("Notebooks en Français")
+        components.html(create_slideshow(notebooks_fr, "FR"), height=400)
 
-            function pauseSlides(event)
-            {{
-                clearInterval(interval); // Clear the interval we set earlier
-            }}
-            function resumeSlides(event)
-            {{
-                interval = setInterval(showSlides, 2500);
-            }}
-            // Set up event listeners for the mySlides
-            var mySlides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < mySlides.length; i++) {{
-            mySlides[i].onmouseover = pauseSlides;
-            mySlides[i].onmouseout = resumeSlides;
-            }}
-            </script>
 
-            </body>
-            </html>
 
-            """,
-                height=270,
-    )
+
 
 # -----------------  contact  ----------------- #
-    with col2:
-        st.subheader("📨 Contact Me")
-        contact_form = f"""
+with st.container():
+    st.subheader("📨 Contact Me")
+    contact_form = f"""
         <form action="https://formsubmit.co/430d11100db23f61bdfebe1e4ea6e020" method="POST">
             <input type="hidden" name="_captcha value="false">
             <input type="text" name="name" placeholder="Your name" required>
@@ -315,4 +258,4 @@ with st.container():
             <button type="submit">Send</button>
         </form>
         """
-        st.markdown(contact_form, unsafe_allow_html=True)
+    st.markdown(contact_form, unsafe_allow_html=True)
