@@ -17,10 +17,9 @@ with tab_gb:
         cols = st.columns([1, 2])
 
         with cols[0]:
-            st.image(notebook["thumbnail"], width=250)
+            st.markdown(notebook["description"])
 
         with cols[1]:
-            st.write(notebook["description"])
             components.iframe(src=notebook["html_preview"], height = 350, scrolling=True)
             st.markdown(f"""
             <a href="{notebook['colab_link']}" target="_blank">

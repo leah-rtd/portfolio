@@ -237,10 +237,14 @@ with st.container():
     with col1:
         st.markdown("English Notebooks")
         components.html(create_slideshow(notebooks_gb, "GB"), height=400)
+        st.markdown("""""")
+
 
     with col2:
         st.markdown("Notebooks en Français")
         components.html(create_slideshow(notebooks_fr, "FR"), height=400)
+        st.markdown("""""")
+
 
 
 
