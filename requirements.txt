@@ -2,7 +2,7 @@
 # Core Streamlit packages
 streamlit==1.47.1
 streamlit-lottie==0.0.2
-streamlit-timeline==0.02
+streamlit-timeline==0.0.2
 
 # Image processing
 Pillow==11.3.0
