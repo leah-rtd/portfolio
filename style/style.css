@@ -5,7 +5,7 @@
 
 /* Style hyperlinks*/
 a{
-  display: block; 
+  display: block;
   color:#2e9aff !important;
   font-weight: bold;
 }
@@ -24,13 +24,13 @@ p{
 
 /* Style the contact form */
 input[type=message], input[type=email], input[type=text], textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
     resize: vertical
 }
 
@@ -75,4 +75,3 @@ background-color: #001d6c;
 color: white;
 text-align: center;
 }
-
