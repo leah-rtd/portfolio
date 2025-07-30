@@ -171,6 +171,7 @@ def create_slideshow(notebooks, unique_id):
     <br>
     <div style="text-align:center">
         {dots_html}
+    <br>
     </div>
 
     <style>
