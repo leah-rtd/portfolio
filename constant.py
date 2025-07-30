@@ -27,3 +27,47 @@ endorsements = {
     "img2": "https://user-images.githubusercontent.com/90204593/238171251-5f4c5597-84d4-4b4b-803c-afe74e739070.png",
     "img3": "https://user-images.githubusercontent.com/90204593/238171242-53f7ceb3-1a71-4726-a7f5-67721419fef8.png"
 }
+
+
+notebooks_gb = [
+    {
+        "title": "Introduction to Python Notebook 🇬🇧",
+        "description": "",
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_gb_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_gb.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_gb.ipynb"
+    },
+        {
+        "title": "Introduction to Python Notebook 🇬🇧",
+        "description": "",
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_gb_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_gb.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_gb.ipynb"
+    },
+            {
+        "title": "Introduction to Python Notebook 🇬🇧",
+        "description": "",
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_gb_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_gb.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_gb.ipynb"
+    },
+
+]
+
+notebooks_fr = [
+    {
+        "title": "Introduction à Python 🇫🇷",
+        "description": """
+        Notebook couvrant les bases pythons:
+        - types de données simples et avancés,
+        - control flow (conditions if et else)
+        - fonctions,
+        - boucles for,
+        - requetes API
+
+        """,
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_fr_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_fr.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_fr.ipynb"
+    }
+]
