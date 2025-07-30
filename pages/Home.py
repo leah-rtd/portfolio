@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+# from streamlit_lottie import st_lottie
 from streamlit_timeline import timeline
 import streamlit.components.v1 as components
 from llama_index.core import GPTVectorStoreIndex, SimpleDirectoryReader, Settings
@@ -67,12 +67,12 @@ if user_input:
 st.sidebar.markdown('<hr>Click on the image to view my <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20px" style="vertical-align:middle;">', unsafe_allow_html = True)
 st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
-@st.cache_resource
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# @st.cache_resource
+# def load_lottieurl(url: str):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -81,14 +81,15 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # loading assets
-python_lottie = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2znxgjyt.json")
-my_sql_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf30_w11f2rwn.json")
-git_lottie = load_lottieurl("https://assets9.lottiefiles.com/private_files/lf30_03cuemhb.json")
-github_lottie = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_6HFXXE.json")
-docker_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf30_35uv2spq.json")
-tensorflow_lottie = load_lottieurl("https://lottie.host/6df2f0b7-30ad-4c26-b6de-724820fd47a1/F43wjHIHZF.json")
-google_cloud_platform_lottie = load_lottieurl("https://lottie.host/c4ec4a9f-05f0-4e49-a207-aefd841169b2/39ilxANJIZ.json")
-sklearn_lottie = load_lottieurl("https://lottie.host/fa31caed-9262-4e23-b9a1-09ebce377f00/9r4yZZPaMN.json")
+# python_lottie = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2znxgjyt.json")
+# my_sql_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf30_w11f2rwn.json")
+# git_lottie = load_lottieurl("https://assets9.lottiefiles.com/private_files/lf30_03cuemhb.json")
+# github_lottie = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_6HFXXE.json")
+# docker_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf30_35uv2spq.json")
+# tensorflow_lottie = load_lottieurl("https://lottie.host/6df2f0b7-30ad-4c26-b6de-724820fd47a1/F43wjHIHZF.json")
+# google_cloud_platform_lottie = load_lottieurl("https://lottie.host/c4ec4a9f-05f0-4e49-a207-aefd841169b2/39ilxANJIZ.json")
+# sklearn_lottie = load_lottieurl("https://lottie.host/fa31caed-9262-4e23-b9a1-09ebce377f00/9r4yZZPaMN.json")
+
 # ----------------- info ----------------- #
 def gradient(color1, color2, color3, content1, content2):
     st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
@@ -108,25 +109,25 @@ with st.container():
 
 
 # ----------------- skillset ----------------- #
-with st.container():
-    st.subheader('⚒️ Skills')
-    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
-    with col1:
-        st_lottie(python_lottie, height=70,width=70, key="python", speed=2.5)
-    with col2:
-        st_lottie(tensorflow_lottie, height=70,width=70, key="tensorflow", speed=4)
-    with col3:
-        st_lottie(my_sql_lottie,height=70,width=70, key="mysql", speed=2.5)
-    with col4:
-        st_lottie(git_lottie,height=70,width=70, key="git", speed=2.5)
-    with col1:
-        st_lottie(github_lottie,height=70,width=70, key="github", speed=2.5)
-    with col2:
-        st_lottie(docker_lottie,height=70,width=70, key="docker", speed=2.5)
-    with col3:
-        st_lottie(google_cloud_platform_lottie,height=70,width=70, key="gcp", speed=2.5)
-    with col4:
-        st_lottie(sklearn_lottie,height=70,width=70, key="js", speed=1)
+# with st.container():
+#     st.subheader('⚒️ Skills')
+#     col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
+#     with col1:
+#         st_lottie(python_lottie, height=70,width=70, key="python", speed=2.5)
+#     with col2:
+#         st_lottie(tensorflow_lottie, height=70,width=70, key="tensorflow", speed=4)
+#     with col3:
+#         st_lottie(my_sql_lottie,height=70,width=70, key="mysql", speed=2.5)
+#     with col4:
+#         st_lottie(git_lottie,height=70,width=70, key="git", speed=2.5)
+#     with col1:
+#         st_lottie(github_lottie,height=70,width=70, key="github", speed=2.5)
+#     with col2:
+#         st_lottie(docker_lottie,height=70,width=70, key="docker", speed=2.5)
+#     with col3:
+#         st_lottie(google_cloud_platform_lottie,height=70,width=70, key="gcp", speed=2.5)
+#     with col4:
+#         st_lottie(sklearn_lottie,height=70,width=70, key="js", speed=1)
 
 
 # ----------------- timeline ----------------- #
