@@ -1,16 +1,17 @@
 import streamlit as st
-from PIL import Image, ImageOps
 from constant import *
+from utils import load_images as _load_images
 
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
+local_css("style/style.css")
 
 @st.cache_resource
 def load_images():
-    target_size = (300, 300)
-    img_1 = ImageOps.fit(Image.open("images/skiing_2.jpg"), target_size)
-    img_2 = ImageOps.fit(ImageOps.exif_transpose(Image.open("images/crochet.jpeg")), target_size)
-    img_3 = ImageOps.fit(Image.open("images/hiking.jpeg"), target_size)
-    return img_1, img_2, img_3
+    return _load_images()
 
 st.title("⛷️ Hobbies")
 

@@ -1,0 +1,26 @@
+Dear Sir/Madam,
+I am writing to you today inquiring about a possible employment position. Indeed, I believe the work you
+do at the Global Public Policy Institute falls within my interests. I have an academic background in Politics
+and Government with a strong interest in research and questions of European governance.
+I undertook my undergraduate studies in the Netherlands, at Leiden University College where I completed
+a BSc in Governance, Economics and Development, and graduated Cum Laude. This course was created
+around the study of four main ‘Global Challenges’ which heavily intersect with the global governance
+topics which you research. During this course I developed different quantitative research skills such as
+statistical analysis through R and spatial analysis and mapping with ArcGis. These skills were essential to
+my research, which often produced reports on different themes within governance such as corruption,
+poverty & socio-economic inequalities and population health. I then pursued my Master's degree in
+Government & Politics at St. John’s University, Rome, which I obtained Summa Cum Laude. There I also
+obtained a Certificate in International Law & Diplomacy. During my master’s I further developed my
+theoretical knowledge in particular concerning human rights issues, European energy policies and socioeconomic concerns.
+Most recently, I have completed a 10-week-full-time Data Science and Machine Learning bootcamp with
+Le Wagon. This bootcamp has made me proficient in Python (I am comfortable using Pandas, BigQuery,
+Numpy, Matplotlib, Scipy, Seaborn and Statsmodels), and SQL. The main packages that we used for Deep
+learning were Sickit-learn and TensorFlow Keras. We also used data products such as Google Cloud
+Platform and ML Flow.
+I believe that this fluency in Data Science is essential to understanding the consequences of the use of new
+technologies and thus giving accurate global governance advice in this sector. Combining both an
+understanding of how these tools function behind the scenes as well as the institutional framework.
+I think that a position at your institute would be an ideal opportunity for me to further my interest in global
+governance while combining my knowledge in Data Science.
+Thank you for your consideration,
+Leah Rothschild
