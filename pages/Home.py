@@ -54,15 +54,6 @@ with st.container():
         if openai_api_key.startswith('sk-'):
             st.info(ask_bot(user_input))
 
-# -----------------  loading assets  ----------------- #
-
-
-
-
-
-
-# loading assets
-
 
 # ----------------- info ----------------- #
 def gradient(color1, color2, color3, content1, content2):
