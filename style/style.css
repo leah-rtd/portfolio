@@ -1,27 +1,3 @@
-/* Change the sidebar color*/
-[data-testid=stSidebar] {
-  background-image: linear-gradient(#000395,#FFD4DD);
-}
-
-/* Style hyperlinks*/
-a{
-  display: block;
-  color:#2e9aff !important;
-  font-weight: bold;
-}
-
-p{
-  color: white
-}
-
-.st-ck {
-  caret-color: black;
-}
-
-.st-bh, .st-c2, .st-c3, .st-c4, .st-c5, .st-c6, .st-c7, .st-c8, .st-c9, .st-ca, .st-cb, .st-b8, .st-cc, .st-cd, .st-ce, .st-cf, .st-cg, .st-ch, .st-ci, .st-cj, .st-ae, .st-af, .st-ag, .st-ck, .st-ai, .st-aj, .st-c1, .st-cl, .st-cm, .st-cn {
-  color: black;
-}
-
 /* Style the contact form */
 input[type=message], input[type=email], input[type=text], textarea {
     width: 100%;
@@ -54,17 +30,6 @@ button[type=submit]:hover {
 footer {visibility: hidden;}
 header {visibility: hidden;}
 
-
-/* Design Hyperlink */
-a:link , a:visited{
-color: blue;
-text-decoration: underline;
-}
-
-a:hover,  a:active {
-color: red;
-text-decoration: underline;
-}
 
 .footer {
 position: fixed;

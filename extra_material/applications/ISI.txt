@@ -1,0 +1,29 @@
+To whom it may concern,
+I am writing to you today in hope to be considered for the Lagrange Fellowship which you offer in
+partnership with the CRT Foundation and the ISI Foundation, starting in April of 2023. I am extremely
+interested in this opportunity as I believe that it perfectly combines my two centres of interest, namely, your
+focus on ‘Data Science for Social Impact’ is an ideal which I share with your organisation. Furthermore,
+your Fellowship would be extremely valuable to me in that it would allow me to progress with my own
+goal which is to be able to use Data Science and Data Analytics within the field of European Policy
+Research, producing public interest information.
+I believe to qualify as an optimal candidate for this position. Throughout the course of my studies, I have
+focused on governance and politics, especially through the lens of Global Challenges and Social Impact. I
+undertook my undergraduate studies in the Netherlands, at Leiden University College where I completed a
+BSc in Governance, Economics and Development, and graduated Cum Laude. During this time, I became
+acquainted with quantitative research methods such as statistical analysis through R and spatial analysis
+and mapping with ArcGis. These skills were essential to my research, which often produced reports on
+different themes within governance such as corruption, poverty & socio-economic inequalities and
+population health. I then pursued my Master's degree in Government & Politics at St. John’s University,
+Rome, which I obtained summa cum laude. There I also obtained a Certificate in International Law &
+Diplomacy. During my master’s I further developed my theoretical knowledge in particular concerning
+human rights issues, European energy policies and socio-economic concerns.
+Finally, I have recently completed a 10-week-full-time Data Science and Machine Learning bootcamp with
+Le Wagon. This bootcamp has made me proficient in Python (I am comfortable using Pandas, BigQuery,
+Numpy, Matplotlib, Scipy, Seaborn and Statsmodels), and SQL. The main packages that we used for Deep
+learning were Sickit-learn and TensorFlow Keras. For NLP I performed a sentiment analysis using
+Word2Vec. We also used data products such as Google Cloud Platform and ML Flow. Finally, as part of
+my final project, using a CNN model, my team and I were able to predict urban heat islands in Paris and
+Berlin using data on land use types, building height and density and topographical information.
+I believe the fellowship you offer would be an ideal opportunity for me to further my skills and interests
+in Data Science while combining my academic background in European governance focusing on Social
+Impact.

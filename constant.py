@@ -29,29 +29,28 @@ endorsements = {
 }
 
 
-notebooks_gb = [
+notebooks_en = [
     {
         "title": "Introduction to Python Notebook 🇬🇧",
         "description": "",
-        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_gb_thumbnail.png?raw=true",
-        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_gb.html",
-        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_gb.ipynb"
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_en_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_en.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_en.ipynb"
     },
-        {
-        "title": "Introduction to Python Notebook 🇬🇧",
+    {
+        "title": "Introduction to Data Wrangling and Statistics 🇬🇧",
         "description": "",
-        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_gb_thumbnail.png?raw=true",
-        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_gb.html",
-        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_gb.ipynb"
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Data_Wrangling_Stats_en_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Data_Wrangling_Stats_en.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Data_Wrangling_Stats_en.ipynb"
     },
-            {
-        "title": "Introduction to Python Notebook 🇬🇧",
+    {
+        "title": "Introduction to Machine Learning 🇬🇧",
         "description": "",
-        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_gb_thumbnail.png?raw=true",
-        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_gb.html",
-        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_gb.ipynb"
-    },
-
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Machine_Learning_en_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Machine_Learning_en.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Machine_Learning_en.ipynb"
+    }
 ]
 
 notebooks_fr = [
@@ -69,5 +68,19 @@ notebooks_fr = [
         "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Python_fr_thumbnail.png?raw=true",
         "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Python_fr.html",
         "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Python_fr.ipynb"
+    },
+    {
+        "title": "Introduction à Data Wrangling et Statistiques 🇫🇷",
+        "description": "",
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Data_Wrangling_Stats_fr_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Data_Wrangling_Stats_fr.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Data_Wrangling_Stats_fr.ipynb"
+    },
+        {
+        "title": "Introduction à Machine Learning 🇫🇷",
+        "description": "",
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Machine_Learning_fr_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Machine_Learning_fr.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Machine_Learning_fr.ipynb"
     }
 ]

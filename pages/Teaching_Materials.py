@@ -3,6 +3,11 @@ import streamlit.components.v1 as components
 from constant import *
 
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
+local_css("style/style.css")
 
 st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
@@ -10,9 +15,9 @@ st.title("👩‍🏫 Teaching Materials")
 
 st.markdown("""#### All of the Notebooks have been created by me as support material to help students in their Python and Data Science learning.
 You can scroll through the notebooks in the right panel or open them in Google Colab to use them yourself.""")
-tab_gb, tab_fr = st.tabs(['Notebooks 🇬🇧', 'Notebooks 🇫🇷'])
-with tab_gb:
-    for notebook in notebooks_gb:
+tab_en, tab_fr = st.tabs(['Notebooks 🇬🇧', 'Notebooks 🇫🇷'])
+with tab_en:
+    for notebook in notebooks_en:
         st.subheader(notebook["title"])
         cols = st.columns([1, 2])
 
