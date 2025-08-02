@@ -24,7 +24,8 @@ st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 st.title("👩‍🏫 Teaching Materials")
 
 st.markdown("""#### All of the Notebooks have been created by me as support material to help students in their Python and Data Science learning.
-You can scroll through the notebooks in the right panel or open them in Google Colab to use them yourself.""")
+You can scroll through the notebooks in the right panel or open them in Google Colab to use them yourself.
+Please note that these notebooks are for introductory purposes only. They are supposed to be combined with a teacher's explanation and/or full lesson.""")
 tab_en, tab_fr = st.tabs(['Notebooks 🇬🇧', 'Notebooks 🇫🇷'])
 with tab_en:
     for notebook in notebooks_en:
