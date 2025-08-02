@@ -50,6 +50,18 @@ notebooks_en = [
         "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Machine_Learning_en_thumbnail.png?raw=true",
         "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Machine_Learning_en.html",
         "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Machine_Learning_en.ipynb"
+    },
+    {
+        "title": "Introduction to Linear Regression with `sklearn` 🇬🇧",
+        "description": """
+        Notebook covering Linear Regression basics:
+        - what is linear regression,
+        - how to implement it with the `sklearn` package,
+        - how to properly evaluate the model's performance
+        """,
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_ML_Regression_en_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_ML_Regression_en.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_ML_Regression_en.ipynb"
     }
 ]
 
@@ -95,5 +107,17 @@ notebooks_fr = [
         "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_Machine_Learning_fr_thumbnail.png?raw=true",
         "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_Machine_Learning_fr.html",
         "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_Machine_Learning_fr.ipynb"
+    },
+    {
+        "title": "Introduction à la Régression Linéaire avec `sklearn` 🇫🇷",
+        "description": """
+        Notebook couvrant les bases de la régression linéaire:
+        - qu'est-ce une régression linéaire,
+        - comment l'implementer avec la librairie `sklearn`,
+        - comment évaluer correctement la performance du modèle
+        """,
+        "thumbnail": "https://github.com/leah-rtd/pedagogical_content/blob/master/thumbnails/Intro_ML_Regression_fr_thumbnail.png?raw=true",
+        "html_preview": "https://raw.githack.com/leah-rtd/pedagogical_content/refs/heads/master/htmls/Intro_ML_Regression_fr.html",
+        "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_ML_Regression_fr.ipynb"
     }
 ]
