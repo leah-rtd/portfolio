@@ -12,6 +12,7 @@ portfolio_page = st.Page(Path("pages/Portfolio.py", title = "Portfolio", icon = 
 
 pg = st.navigation([home_page,
                     # resume_page,
+                    portfolio_page,
                     teaching_content_page,
                     hobby_page])
 
