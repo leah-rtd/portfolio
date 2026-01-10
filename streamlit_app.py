@@ -8,6 +8,7 @@ home_page = st.Page(Path("pages/Home.py"), title = "Home", icon = "🏠")
 # resume_page = st.Page(Path("pages/Resume.py"), title = "Resume", icon = "💼")
 hobby_page = st.Page(Path("pages/Hobbies.py"), title = "Hobbies", icon = "⛷️")
 teaching_content_page = st.Page(Path("pages/Teaching_Materials.py"), title = "Teaching Materials", icon = "👩‍🏫")
+portfolio_page = st.Page(Path("pages/Portfolio.py", title = "Portfolio", icon = "📂"))
 
 pg = st.navigation([home_page,
                     # resume_page,
