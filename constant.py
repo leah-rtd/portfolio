@@ -121,3 +121,21 @@ notebooks_fr = [
         "colab_link": "http://colab.research.google.com/github/leah-rtd/pedagogical_content/blob/master/Intro_ML_Regression_fr.ipynb"
     }
 ]
+
+
+projects = [
+    {
+        "title": "Need A Wagon 🚕",
+        "tech_stack": "Python • Streamlit • TensorFlow • Google Cloud Platform • MLflow • Prefect • Docker",
+        "skills_learned": [
+            "End-to-end ML pipeline development",
+            "Cloud infrastructure and deployment",
+            "MLOps best practices and experiment tracking",
+            "Large-scale data processing and warehousing",
+            "Interactive data visualization and web apps"
+        ],
+        "image": "https://your-image-url.com/project1.png",
+        "project_link": "https://need-a-wagon.streamlit.app/",
+        "source_code": "https://github.com/leah-rtd/cash_cab"
+    }
+]
