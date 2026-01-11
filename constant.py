@@ -134,7 +134,7 @@ projects = [
             "Large-scale data processing and warehousing",
             "Interactive data visualization and web apps"
         ],
-        "image": "https://your-image-url.com/project1.png",
+        "image": "https://github.com/leah-rtd/portfolio/blob/main/images/need_a_wagon.png?raw=true",
         "project_link": "https://need-a-wagon.streamlit.app/",
         "source_code": "https://github.com/leah-rtd/cash_cab"
     }
