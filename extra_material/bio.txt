@@ -1,39 +1,125 @@
-About Leah:
-Leah is a seasoned professional with expertise in AI, Data Science, Data Analytics and Cloud technologies. Holding an undergraduate and master degree in the field of Political Science, Leah is committed to researching innovative solutions for current European Public Policy issues
+About Leah
 
-Work Experience:
-Data Science Teacher at Le Wagon (2023-2025), Data Science Batch Manager at Le Wagon (2025)
+Leah Rothschild is a data professional with experience in AI, Data Science, Data Analytics and Cloud technologies. She holds both a bachelor’s and a master’s degree in Political Science and brings an interdisciplinary perspective, combining technical ability with an understanding of social and institutional contexts.
 
-Career Goal:
-Leah's career goal is to leverage their expertise in AI and Data Science to drive meaningful innovation and create solutions that positively impact European governance and society.
+Work Experience
 
-Skills:
-AI, Data Science, Cloud, Python
+Le Wagon
 
-Certification:
-Le Wagon Data Science (2022)
+Data Science Teacher
 
-Achievements:
-Helped with the implementation of new Data Science content at Le Wagon to deliver more AI content.
+Data Science Batch Manager
 
-Contact:
+Supported and coached learners
+
+Delivered hands-on technical training
+
+Helped shape and update data education content
+
+Worked with Python, Machine Learning, data workflows and applied projects
+
+Career Focus
+
+Leah aims to build a career at the intersection of:
+
+Technology
+
+People
+
+Positive social impact
+
+She enjoys roles involving collaboration, learning, applied data work and meaningful innovation.
+
+Skills
+
+AI
+
+Data Science
+
+Data Analytics
+
+Cloud Technologies
+
+Python
+
+SQL
+
+Machine Learning
+
+Collaborative problem solving
+
+Certification
+
+Le Wagon — Data Science Programme
+
+Achievements
+
+Contributed to new and improved Data Science learning content
+
+Helped expand coverage of AI topics
+
+Supported learners in developing confidence with modern tools
+
+Strengths
+
+Curiosity
+
+Empathy
+
+Responsibility
+
+Enthusiasm for technology and learning
+
+Values
+
+Teamwork
+
+Clear and honest communication
+
+Community and support
+
+Growth and continuous learning
+
+Quality and thoughtful work
+
+Positive social contribution
+
+Areas for Development
+
+Tends to analyse and refine work deeply
+
+This sometimes increases time spent, but leads to thoughtful and reliable outcomes
+
+Interests and Hobbies
+
+Exploring technology and AI ideas
+
+Crocheting and knitting
+
+Skiing
+
+Music
+
+Nature and lake swimming
+
+Connecting with friends and family over coffee and conversation
+
+Location
+
+Berlin, Germany
+
+Contact
+
 LinkedIn: https://www.linkedin.com/in/leah-rothschild
-Location: Berlin, Germany
 
-Strengths and Advantages:
-Leah's strengths lie in a profound passion for technology and European governance.
+Portfolio
 
-Weaknesses and Disadvantages:
-Leah's unwavering pursuit of excellence may occasionally lead to in-depth analysis, but it ensures the delivery of high-quality services.
+This website showcases projects involving AI, Data Science and interactive applications. It is built using Python and generative AI and is designed to inspire creative uses of technology.
 
-Interests and Hobbies:
-Leah's passion for technology extends into leisure hours, where they delve into the cutting-edge realm of GenAI, continuously pushing the boundaries of what can be achieved in various projects. In addition, Leah finds joy in the simple pleasures of life, such as swimming in the lakes, and sharing coffee moments with friends and family.
+Availability
 
-Portfolio:
-Explore Leah's portfolio of innovative projects here. This website serves as a showcase for some of Leah's remarkable projects. Constructed using generative AI and Python, the website aims to inspire visitors with innovative ideas on seamlessly integrating generative AI into their own portfolio websites. Feel free to explore and ignite your creativity!
+Open to new opportunities and collaborations
 
-Availability:
-Leah is actively seeking new opportunities and is ready to start immediately.
+References
 
-References:
-References are available upon request.
+Available on request

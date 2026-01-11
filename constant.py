@@ -3,7 +3,7 @@ info = {
    "Name": "Leah",
    "Full_Name": "Leah Rothschild",
    "Intro": "A Data Science teacher @le wagon with an interest in sustainability, human rights issues and international governance",
-   "About":"Hey there, I'm Leah! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in European Governance.",
+   "About":"Hey there, I'm Leah! I'm passionate about leveraging data and technology to drive meaningful insights and solutions.",
    "City":"Berlin, Germany",
    "Photo":"""<a href=\"https://www.linkedin.com/in/leah-rothschild/\"><img src=\"https://raw.githubusercontent.com/leah-rtd/portfolio/refs/heads/main/images/profile_pic.png" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
    "Email": "leahisrothschild@gmail.com"
@@ -137,5 +137,19 @@ projects = [
         "image": "https://github.com/leah-rtd/portfolio/blob/main/images/need_a_wagon.png?raw=true",
         "project_link": "https://need-a-wagon.streamlit.app/",
         "source_code": "https://github.com/leah-rtd/cash_cab"
+    },
+    {
+    "title": "Student Quiz Grader 📝",
+    "tech_stack": "Python • Streamlit • Selenium • Pandas • Makefile",
+    "skills_learned": [
+        "Web automation and browser control",
+        "API integration (Slack, OpenAI)",
+        "Natural language processing for feedback generation",
+        "Building interactive admin tools",
+        "Data analysis and student performance categorization"
+    ],
+    "image": "https://github.com/leah-rtd/portfolio/blob/main/images/quizzie.png?raw=true",
+    "project_link": None,
+    "source_code": None
     }
 ]

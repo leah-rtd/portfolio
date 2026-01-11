@@ -56,55 +56,35 @@ def ask_bot(input_text):
 
     # Create query engine with custom retriever settings
     query_engine = index.as_query_engine(
-        similarity_top_k=10,  # Retrieve more documents to ensure priority docs are included
-        response_mode="tree_summarize"  # Better for combining multiple sources
+        similarity_top_k=3,
+        response_mode="compact"  # Better for combining multiple sources
     )
 
     pronoun = info["Pronoun"]
     name = info["Name"]
 
     # Enhanced prompt with document prioritization instructions
-    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in her job search by providing recruiters with relevant and concise information.
-    If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}.
-    Keep your answers short and concise.
-    Don't put "Buddy" or a breakline in the front of your answer.
-    Human: {input}
-    """
+    PROMPT_QUESTION = f"""
+You are Buddy, an AI assistant for {name}. Use ONLY the provided documents.
+Answer ONLY the question asked. Do NOT list unrelated information.
+
+RULES:
+- If the question is about VALUES, speak only about values and principles
+- If the question is about SKILLS, list only skills
+- If the question is about EXPERIENCE, mention only experience
+- Do NOT describe location, LinkedIn, availability, or references unless explicitly asked
+- Prefer high priority documents when available
+- If the answer is not in the documents, say you do not know
+
+If unsure, be honest and invite the recruiter to contact {name} directly ({pronoun}).
+
+Be concise, structured, human, and relevant.
+
+Human: {input_text}
+"""
 
 
-    output = query_engine.query(PROMPT_QUESTION.format(input=input_text))
-    print(f"output: {output}")
-    return output.response
-
-def ask_bot2(input_text):
-
-    pronoun = info["Pronoun"]
-    name = info["Name"]
-    documents = SimpleDirectoryReader(input_files=["extra_material/bio.txt"]).load_data()
-    json_reader = JSONReader()
-    documents_json = json_reader.load_data(input_file="extra_material/timeline.json", extra_info={})
-    all_docs = documents + documents_json
-    # define LLM
-    llm = ChatOpenAI(
-        model_name="gpt-3.5-turbo",
-        temperature=0,
-        openai_api_key=openai.api_key,
-    )
-    Settings.llm = LangChainLLM(llm=llm)
-
-
-    # load index
-    index = GPTVectorStoreIndex.from_documents(all_docs, llm=llm)
-
-    # query LlamaIndex and GPT-3.5 for the AI's response
-    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in her job search by providing recruiters with relevant and concise information.
-    If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}.
-    Keep your answers short and concise.
-    Don't put "Buddy" or a breakline in the front of your answer.
-    Human: {input}
-    """
-
-    output = index.as_query_engine().query(PROMPT_QUESTION.format(input=input_text))
+    output = query_engine.query(PROMPT_QUESTION.format(input_text=input_text))
     print(f"output: {output}")
     return output.response
 
