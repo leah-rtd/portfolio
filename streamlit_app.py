@@ -9,11 +9,13 @@ home_page = st.Page(Path("pages/Home.py"), title = "Home", icon = "🏠")
 hobby_page = st.Page(Path("pages/Hobbies.py"), title = "Hobbies", icon = "⛷️")
 teaching_content_page = st.Page(Path("pages/Teaching_Materials.py"), title = "Teaching Materials", icon = "👩‍🏫")
 projects_page = st.Page(Path("pages/Projects.py"), title = "Projects", icon = "📂")
+buddy_page = st.Page(Path("pages/Chat_with_buddy.py"), title = "Chat with my AI Buddy", icon = "💬")
 
 pg = st.navigation([home_page,
                     # resume_page,
                     projects_page,
                     teaching_content_page,
+                    buddy_page,
                     hobby_page])
 
 pg.run()
