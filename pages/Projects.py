@@ -31,25 +31,29 @@ for project in projects:
         for skill in project["skills_learned"]:
             st.markdown(f"- {skill}")
 
-        st.markdown(f"""
-        <a href="{project['source_code']}" target="_blank">
-            <button style="
-                background-color: #262730;
-                color: white;
-                border: 1px solid #4CAF50;
-                padding: 8px 16px;
-                border-radius: 4px;
-                cursor: pointer;
-                font-size: 14px;
-            ">🔗 See Source Code</button>
-        </a>
-        """, unsafe_allow_html=True)
-
     with cols[1]:
         st.markdown(f"""
         <a href="{project['project_link']}" target="_blank">
             <img src="{project['image']}" alt="{project['title']}" style="width:100%; border-radius: 8px;">
         </a>
         """, unsafe_allow_html=True)
+
+        if project.get("source_code"):
+            st.markdown("")
+            st.markdown(f"""
+        <a href="{project['source_code']}" target="_blank">
+            <button style="
+                background-color: #262730;
+                color: white;
+                border: 1px solid #4CAF50;
+                padding: 8px 16px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 14px;
+            ">🔗 See Source Code</button>
+        </a>
+        """, unsafe_allow_html=True)
+        else:
+            st.markdown("🔒 **Private Repository**")
 
     st.markdown("---")

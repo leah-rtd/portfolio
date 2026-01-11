@@ -137,5 +137,19 @@ projects = [
         "image": "https://github.com/leah-rtd/portfolio/blob/main/images/need_a_wagon.png?raw=true",
         "project_link": "https://need-a-wagon.streamlit.app/",
         "source_code": "https://github.com/leah-rtd/cash_cab"
+    },
+    {
+    "title": "Student Quiz Grader 📝",
+    "tech_stack": "Python • Streamlit • Selenium • Pandas • Makefile",
+    "skills_learned": [
+        "Web automation and browser control",
+        "API integration (Slack, OpenAI)",
+        "Natural language processing for feedback generation",
+        "Building interactive admin tools",
+        "Data analysis and student performance categorization"
+    ],
+    "image": "YOUR_SCREENSHOT_URL",
+    "project_link": None,
+    "source_code": None
     }
 ]
