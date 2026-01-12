@@ -41,3 +41,5 @@ with st.container():
             st.warning('⚠️Please enter your OpenAI API key on the sidebar.', icon='⚠')
         if openai_api_key.startswith('sk-'):
             st.info(ask_bot(user_input))
+
+st.caption("I do not store the OpenAI API keys.\nIf you refresh the page it will be reset.")
