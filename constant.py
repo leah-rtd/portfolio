@@ -125,7 +125,9 @@ notebooks_fr = [
 
 projects = [
     {
+        "type": "repo",
         "title": "Need A Wagon 🚕",
+        "subtitle": "Predicting New York Taxi Prices using Deep Learning",
         "tech_stack": "Python • Streamlit • TensorFlow • Google Cloud Platform • MLflow • Prefect • Docker",
         "skills_learned": [
             "End-to-end ML pipeline development",
@@ -139,17 +141,49 @@ projects = [
         "source_code": "https://github.com/leah-rtd/cash_cab"
     },
     {
-    "title": "Student Quiz Grader 📝",
-    "tech_stack": "Python • Streamlit • Selenium • Pandas • Makefile",
-    "skills_learned": [
-        "Web automation and browser control",
-        "API integration (Slack, OpenAI)",
-        "Natural language processing for feedback generation",
-        "Building interactive admin tools",
-        "Data analysis and student performance categorization"
-    ],
-    "image": "https://github.com/leah-rtd/portfolio/blob/main/images/quizzie.png?raw=true",
-    "project_link": None,
-    "source_code": None
+        "type": "video",
+        "title": "Future Proofing Cities",
+        "subtitle": "Predicting future Urban Heat Islands in Paris and Berlin using CNNs",
+        "tech_stack": "Python • Pandas • Convolutional Neural Networks (CNNs) • Streamlit • Keras • Docker",
+        "skills_learned": [
+            "Data Wrangling (Pandas)",
+            "Using CNNs to predict Land Surface Temperature",
+            "Building Docker Images to serve our model",
+            "Creating a front end using Streamlit"
+        ],
+        "image": None,
+        "project_link": "https://www.youtube.com/watch?v=l8IJ4YHUk4Y",
+        "source_code": "https://github.com/b-fa-ce/future_proofing_cities"
+    },
+    {
+        "type": "slideshow",
+        "title": "Topic Modelling of AI Ethics SubReddit",
+        "subtitle": "Unveiling Trends in AI Ethics: Exploring the Ethical Dimensions of AI",
+        "tech_stack": "R • Python • Hugging Face • Bert models • Data Visualization • Sentiment Analysis",
+        "skills_learned": [
+            "Data Manipulation in R",
+            "Preprocessing textual data",
+            "One Shot Text Classification",
+            "Topic Modelling Using LDA"
+        ],
+        "image": None,
+        "project_link": "https://docs.google.com/presentation/d/1WreTf-55Tx5954vBihdbQ4h8zqXcXrJ580GU4ag030M/embed?start=false&loop=false&delayms=3000",
+        "source_code": None
+    },
+    {
+        "type": "repo",
+        "title": "Student Quiz Grader 📝",
+        "subtitle": "Tool to automate student quiz grading and output of personalised feedback",
+        "tech_stack": "Python • Streamlit • Selenium • Pandas • Makefile",
+        "skills_learned": [
+            "Web automation and browser control",
+            "API integration (Slack, OpenAI)",
+            "Natural language processing for feedback generation",
+            "Building interactive admin tools",
+            "Data analysis and student performance categorization"
+        ],
+        "image": "https://github.com/leah-rtd/portfolio/blob/main/images/quizzie.png?raw=true",
+        "project_link": None,
+        "source_code": None
     }
 ]
