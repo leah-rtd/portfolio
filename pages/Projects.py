@@ -1,5 +1,6 @@
 import streamlit as st
 from constant import *
+import streamlit.components.v1 as components
 
 # -----------------  style  ----------------- #
 
@@ -21,23 +22,32 @@ st.title("📂 Projects")
 
 for project in projects:
     st.subheader(project["title"])
+    st.markdown(f"*{project["subtitle"]}*")
     cols = st.columns([1, 2])
 
     with cols[0]:
-        st.markdown(f"**🛠️ Tech Stack:**")
+        st.markdown(f"##### **🛠️ Tech Stack:**")
         st.markdown(project["tech_stack"])
 
-        st.markdown(f"**💡 Skills Learned:**")
+        st.markdown(f"##### **💡 Skills Learned:**")
         for skill in project["skills_learned"]:
             st.markdown(f"- {skill}")
 
     with cols[1]:
-        st.markdown(f"""
-        <a href="{project['project_link']}" target="_blank">
-            <img src="{project['image']}" alt="{project['title']}" style="width:100%; border-radius: 8px;">
-        </a>
-        """, unsafe_allow_html=True)
-        st.markdown("")
+        if project['type'] == "repo":
+            st.markdown(f"""
+            <a href="{project['project_link']}" target="_blank">
+                <img src="{project['image']}" alt="{project['title']}" style="width:100%; border-radius: 8px;">
+            </a>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+        elif project['type'] == "video":
+            st.video(data=project['project_link'])
+
+        elif project['type'] == "slideshow":
+            components.iframe(project["project_link"], height=400)
+
+
 
         # Create columns for buttons
         button_cols = st.columns(2)
@@ -62,7 +72,7 @@ for project in projects:
                     st.markdown("🔒 **Private Repository**")
 
         with button_cols[1]:
-            if project.get("project_link"):
+            if (project.get("project_link") != None) and ("streamlit" in project.get("project_link")):
                 st.markdown(f"""
                 <a href="{project['project_link']}" target="_blank">
                     <button style="
