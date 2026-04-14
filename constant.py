@@ -122,6 +122,16 @@ notebooks_fr = [
     }
 ]
 
+# projects_info = [
+#     {"title": "Need A Wagon 🚕",
+#      "thumbnail": "https://github.com/leah-rtd/portfolio/blob/main/images/need_a_wagon.png?raw=true"},
+#     {"title": "Future Proofing Cities",
+#      "thumbnail": "https://www.youtube.com/watch?v=l8IJ4YHUk4Y"},
+#     {"title": "Topic Modelling of AI Ethics SubReddit",
+#      "thumbnail": ""},
+#     {"title": "Student Quiz Grader 📝",
+#      "thumbnail": "https://github.com/leah-rtd/portfolio/blob/main/images/quizzie.png?raw=true"}
+# ]
 
 projects = [
     {
