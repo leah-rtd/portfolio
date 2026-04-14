@@ -91,11 +91,19 @@ with st.container():
     # render timeline
     timeline(data, height=600)
 
-# -----------------  notebooks  -----------------  #
+# -----------------  projects  -----------------  #
 @st.cache_resource
 def create_slideshow(notebooks, unique_id):
     return _create_slideshow(notebooks, unique_id)
 
+# with st.container():
+#     st.markdown("""""")
+#     st.subheader("📂 Projects")
+#     components.html(create_slideshow(projects_info, "projects"), height=410)
+
+
+
+# -----------------  notebooks  -----------------  #
 
 # Layout: Two Columns
 with st.container():

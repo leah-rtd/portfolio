@@ -124,7 +124,7 @@ def create_slideshow(notebooks, unique_id):
     for idx, notebook in enumerate(notebooks):
         slides_html += f"""
         <div class="mySlides-{unique_id} fade-{unique_id}">
-            <div style="text-align:left; margin-bottom: 10px;">
+            <div style="text-align:left; margin-bottom: 10px; color: #2C3E50;">
                 <h4 class="slide-title-{unique_id}">{notebook['title']}</h4>
             </div>
             <div class="image-container-{unique_id}">
@@ -161,7 +161,7 @@ def create_slideshow(notebooks, unique_id):
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 600;
             margin: 0;
-            color: #FFFFFF;
+            color: #2C3E50;
             font-size: 18px;
         }}
 
